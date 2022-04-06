@@ -21,4 +21,22 @@ public struct Deck: Equatable {
   public mutating func shuffle() {
     cards.shuffle()
   }
+
+  public mutating func deal() -> PlayingCard? {
+    guard !cards.isEmpty else {
+      return nil
+    }
+
+    return cards.removeLast()
+  }
+
+  public var count: Int {
+    cards.count
+  }
+}
+
+extension Deck: ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: PlayingCard...) {
+    self.init(elements)
+  }
 }
