@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "example-package-playingcard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kofno/example-package-playingcard.git",
+      "state" : {
+        "revision" : "cdbd49c55b8bc506836ce6a1d216242284d3e1e3",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
